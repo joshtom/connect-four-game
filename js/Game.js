@@ -20,4 +20,10 @@ class Game{
         ]
         return players;
     }
+    /**
+     * Gets Game Ready to be played.
+     */
+    startGame(){
+
+    }
 }

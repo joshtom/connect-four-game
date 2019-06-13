@@ -1,8 +1,8 @@
 class Space {
-    constructor(x, y, id, token){
+    constructor(x, y){
         this.x = x;
         this.y = y;
-        this.id = `-${x}-${y}`;
+        this.id = `space-${x}-${y}`;
         this.token = null;
     }
 }

@@ -22,5 +22,10 @@ class Board{
             spaces.push(column);
         }
         return spaces;
-    }   
+    }  
+
+    drawHTMLBoard(){
+        
+    }
+
 }

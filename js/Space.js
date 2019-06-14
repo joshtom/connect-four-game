@@ -5,7 +5,7 @@ class Space {
         this.id = `space-${x}-${y}`;
         this.token = null;
         this.diameter = 76;
-        this.radius = 38;
+        this.radius = this.diameter/2;
     }
     drawSvgSpace(){
         const svgSpace = document.createElementNS("http://www.w3.org/2000/svg", "circle");

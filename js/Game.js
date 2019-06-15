@@ -40,4 +40,23 @@ class Game{
         return this.players.find(player => player.active);
         
     }
+
+    
+    /**
+ * Branches code, depending on what key player presses
+ * @param   {Object}    e - Keydown event object
+ */
+    handleKeydown() {
+        document.addEventListener('keydown', function(e) {
+            if(this.ready = true){
+                if(e.key === ArrowLeft){
+                    // move Left
+                } else if(e.key === ArrowRight){
+                    // move Right
+                } else if(e.key === ArrowDown){
+                    // drop the token
+                }
+            }
+        })
+    }
 }

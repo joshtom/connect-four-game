@@ -24,11 +24,20 @@ class Game{
      * Gets Game Ready to be played.
      */
     startGame(){
-
+                    /** 
+         * Initializes game. 
+         */
+        this.board.drawHTMLBoard();
+        this.activePlayer.activeToken.drawHTMLToken();
+        this.ready = true;
     }
-
+    /**
+     * Returns active player
+     * @return {Object} player - the active player
+     */
     get activePlayer() {
         // Return player object whose active property is equals to true
+        return this.players.find(player => player.active);
         
     }
 }

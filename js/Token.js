@@ -16,6 +16,6 @@ class Token {
         token.style.backgroundColor = this.owner.color;
     }
     get htmlToken(){
-
+        
     }
 }

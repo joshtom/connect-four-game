@@ -32,7 +32,7 @@ createTokens(num) {
  * @return {Array} The Array of unused token
  */
 get unusedTokens() {
-    return this.token.filter (token => !token.dropped);
+    return this.tokens.filter (token => !token.dropped);
 }
 /**
  * Gets the active token by returning the first token in the array of unused tokens.

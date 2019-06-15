@@ -50,9 +50,9 @@ class Game{
         document.addEventListener('keydown', function(e) {
             if(this.ready = true){
                 if(e.key === ArrowLeft){
-                    // move Left
+                    this.activePlayer.activeToken.moveLeft();
                 } else if(e.key === ArrowRight){
-                    // move Right
+                    this.activePlayer.activeToken.moveRight(this.board.columns);
                 } else if(e.key === ArrowDown){
                     // drop the token
                 }

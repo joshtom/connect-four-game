@@ -59,4 +59,21 @@ class Game{
             }
         })
     }
+
+    playToken() {
+        let spaces = this.board.spaces;
+        let activeToken = this.activePlayer.activeToken;
+        let targetColumn = spaces[activeToken.columnLocation];
+        let targetSpace = null;
+
+        for(let space of targetColumn){
+            if(space.token === null) {
+                targetSpace = space;
+            }
+    }
+    if (targetSpace !== null) {
+        game.ready = false;
+        activeToken.drop(targetSpace);
+    }
+}
 }

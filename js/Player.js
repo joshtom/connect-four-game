@@ -27,17 +27,19 @@ createTokens(num) {
     return tokens;
 }
 
+/**
+ * Gets all the token that haven't been dropped
+ * @return {Array} The Array of unused token
+ */
 get unusedTokens() {
-    const getUnusedTokens = new Token();
-    if(getUnusedTokens.dropped = false){
-        return this.tokens.push(token);
-    } else {
-        return false;
-    }
-
+    return this.token.filter (token => !token.dropped);
 }
+/**
+ * Gets the active token by returning the first token in the array of unused tokens.
+ * @return {Object} First token object in the array of unused tokens.
+ */
 get activeToken() {
-    
+    return this.unusedTokens[0];
 }
 }
 

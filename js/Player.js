@@ -26,5 +26,18 @@ createTokens(num) {
     }
     return tokens;
 }
+
+get unusedTokens() {
+    const getUnusedTokens = new Token();
+    if(getUnusedTokens.dropped = false){
+        return this.tokens.push(token);
+    } else {
+        return false;
+    }
+
+}
+get activeToken() {
+    
+}
 }
 

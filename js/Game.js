@@ -26,4 +26,9 @@ class Game{
     startGame(){
 
     }
+
+    get activePlayer() {
+        // Return player object whose active property is equals to true
+        
+    }
 }

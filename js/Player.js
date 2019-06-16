@@ -41,5 +41,9 @@ get unusedTokens() {
 get activeToken() {
     return this.unusedTokens[0];
 }
+
+checkTokens() {
+    
+}
 }
 

@@ -72,7 +72,9 @@ class Game{
     }
     if (targetSpace !== null) {
         game.ready = false;
-        activeToken.drop(targetSpace);
+        activeToken.drop(targetSpace, function(){
+
+        });
     }
 }
     /** 
@@ -150,6 +152,15 @@ class Game{
     gameOver(message) {
         document.querySelector('game-over').style.display = 'block';
         document.querySelector('game-over').textContent = this.message;
+    }
+
+        /** 
+     * Updates game state after token is dropped. 
+     * @param   {Object}  token  -  The token that's being dropped.
+     * @param   {Object}  target -  Targeted space for dropped token.
+     */
+    updateGameState(token, target) {
+        
     }
 
 }

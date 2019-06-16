@@ -14,10 +14,8 @@ class Game{
         // const player1 = new Player('player 1', ' #e15258', 1, 'true');
         // const player2 = new Player('player 2', '#e59a13', 2);
         // Refactor and convert into array
-        const players = [
-            new Player('player 1', ' #e15258', 1, true),
-            new Player('player 2', '#e59a13', 2)
-        ]
+        const players = [ new Player('player 1', ' #e15258', 1, true),
+                          new Player('player 2', '#e59a13', 2)];
         return players;
     }
     /**
@@ -47,7 +45,7 @@ class Game{
  * @param   {Object}    e - Keydown event object
  */
     handleKeydown(e) {
-            if(this.ready = true){
+            if(this.ready){
                 if(e.key === "ArrowLeft"){
                     this.activePlayer.activeToken.moveLeft();
                 } else if(e.key === "ArrowRight"){

@@ -138,6 +138,8 @@ class Game{
             }
         }
 
+        return win;
+
     }
 
         /** 
@@ -150,7 +152,7 @@ class Game{
     }
 
         /** 
-     * Displays game over message.
+     * Displays game over message. 
      * @param {string} message - Game over message.      
      */
     gameOver(message) {
@@ -169,7 +171,7 @@ class Game{
         if (!this.checkForWin(target)){
             this.switchPlayers();
             if(this.activePlayer.checkTokens()){
-                this.activePlayer.activeToken.drawHTMLBoard();
+                this.activePlayer.activeToken.drawHTMLToken();
                 this.ready = true;
             } else {
                 this.gameOver('No more Tokens')

@@ -1,4 +1,4 @@
-// Initializing a new Game Object
+// Instantiating a new Game Object
 const game = new Game();
 
 /** 

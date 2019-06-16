@@ -75,4 +75,18 @@ class Game{
         activeToken.drop(targetSpace);
     }
 }
+    /** 
+ * Checks if there a winner on the board after each token drop.
+ * @param   {Object}    Targeted space for dropped token.
+ * @return  {boolean}   Boolean value indicating whether the game has been won (true) or not (false)
+ */
+    checkForWin(target) {
+        const owner = target.token.owner;
+        let win = false;
+
+        // Checking if the ball is aligned Vetically
+        
+
+    }
+
 }

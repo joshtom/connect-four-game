@@ -59,6 +59,9 @@ class Game{
         
     }
 
+        /**
+     * Finds Space object to drop Token into, drops Token
+     */
     playToken() {
         let spaces = this.board.spaces;
         let activeToken = this.activePlayer.activeToken;
@@ -71,9 +74,10 @@ class Game{
             }
     }
     if (targetSpace !== null) {
+        const game = this;
         game.ready = false;
         activeToken.drop(targetSpace, function(){
-
+            game.updateGameState(activeToken, targetSpace);
         });
     }
 }
@@ -160,7 +164,8 @@ class Game{
      * @param   {Object}  target -  Targeted space for dropped token.
      */
     updateGameState(token, target) {
-        
+        this.target = mark(token);
+
     }
 
 }

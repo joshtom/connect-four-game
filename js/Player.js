@@ -43,7 +43,7 @@ get activeToken() {
 }
 
 checkTokens() {
-    
+    return this.unusedTokens.length === 0 ? false : true;
 }
 }
 

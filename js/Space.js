@@ -30,4 +30,12 @@ class Space {
     mark(token) {
         this.token = token;
     }
+
+    get owner() {
+        if(this.token === null){
+            return null;
+        } else {
+            return this.token.owner;
+        }
+    }
 }

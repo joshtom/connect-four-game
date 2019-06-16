@@ -17,7 +17,7 @@ class Token {
         token.style.backgroundColor = this.owner.color;
     }
     get htmlToken(){
-
+        return document.getElementById(this.id);
     }
     /** 
  * Gets left offset of html element.
@@ -31,7 +31,7 @@ class Token {
      */
     moveLeft(){
         if(this.columnLocation > 0){
-            this.htmlToken.style.left = this.offsetLeft = 76;
+            this.htmlToken.style.left = this.offsetLeft - 76;
             this.columnLocation -= 1;
         }
     }
@@ -40,7 +40,7 @@ class Token {
      */
     moveRight(columns){
         if(this.columnLocation < columns - 1){
-            this.htmlToken.style.right = this.offsetLeft + 76;
+            this.htmlToken.style.left = this.offsetLeft + 76;
             this.columnLocation += 1;
         }
     }

@@ -48,19 +48,18 @@ body {
 #instruction {
     background: #757984;
     width: 200px;
-    
+    display: block;
     position: absolute;
-    margin: 0 auto;
-    top: 180px;
-    left: 0;
-    right:0;
+    right: 0;
+    top: 0;
+    font-weight: bold;
     z-index: 200;
     border:none;
     color: #fff;
     box-shadow: 2px 0px 2px 0px #293047;
     cursor: pointer;
     font-family: 'Wendy One', sans-serif;
-    padding: 5px;
+    padding: 10px;
     
 }
 

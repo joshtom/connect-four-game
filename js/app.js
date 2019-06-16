@@ -17,6 +17,8 @@ const game = new Game();
           game.handleKeydown(event);
       })
 
+  
+
       /**
        * The app.js file is the interaction layer of our game: where the DOM meets the objects. This file is 
        * used to initialize the Game objects and listen for user-triggered events, like mouse clicks or 

@@ -167,6 +167,7 @@ class Game{
         target.mark(token);
 
         if (!this.checkForWin(target)){
+            console.log('No win');
             this.switchPlayers();
             if(this.activePlayer.checkTokens()){
                 this.activePlayer.activeToken.drawHTMLToken();
@@ -175,7 +176,8 @@ class Game{
                 this.gameOver('No more Tokens')
             }
         } else{
-            this.gameOver(`Congratulation ${target.owner.name} wins`);
+            console.log('Win');
+            this.gameOver(`Congratulation ${target.owner.name} wins!`);
         }
 
     }

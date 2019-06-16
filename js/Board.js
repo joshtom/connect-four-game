@@ -13,13 +13,13 @@ class Board{
          * @return  {Array}     An array of space objects
          */
         for(let x = 0; x < this.columns; x++){
-            const column = [];
+            const col = [];
             for(let y = 0; y < this.rows; y++){
 
                 const space = new Space(x,y);
-                column.push(space);
+                col.push(space);
             }
-            spaces.push(column);
+            spaces.push(col);
         }
         return spaces;
     }  
@@ -30,7 +30,7 @@ class Board{
     drawHTMLBoard(){
         for(let column of this.spaces){
             for (let space of column){
-                space.drawSvgSpace();
+                space.drawSVGSpace();
             }
         }
     }

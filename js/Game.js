@@ -134,4 +134,17 @@ class Game{
 
     }
 
+        /** 
+     * Switches active player. 
+     */
+    switchPlayers() {
+        for( let i = 0; i < this.players; i++ ) {
+            if(this.players.active = true) {
+                this.players[i] = false;
+            } else {
+                this.players[i] = true;
+            }
+        }
+    }
+
 }

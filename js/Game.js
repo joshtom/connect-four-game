@@ -147,4 +147,12 @@ class Game{
         }
     }
 
+        /** 
+     * Displays game over message.
+     * @param {string} message - Game over message.      
+     */
+    gameOver(message) {
+        
+    }
+
 }

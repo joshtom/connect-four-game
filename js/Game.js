@@ -138,12 +138,8 @@ class Game{
      * Switches active player. 
      */
     switchPlayers() {
-        for( let i = 0; i < this.players; i++ ) {
-            if(this.players.active = true) {
-                this.players[i] = false;
-            } else {
-                this.players[i] = true;
-            }
+        for( let player of this.players ) {
+            player.active = player.active === true ? false : true;
         }
     }
 
@@ -152,7 +148,7 @@ class Game{
      * @param {string} message - Game over message.      
      */
     gameOver(message) {
-        
+
     }
 
 }

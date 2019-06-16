@@ -148,7 +148,8 @@ class Game{
      * @param {string} message - Game over message.      
      */
     gameOver(message) {
-
+        document.querySelector('game-over').style.display = 'block';
+        document.querySelector('game-over').textContent = this.message;
     }
 
 }

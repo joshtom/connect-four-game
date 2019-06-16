@@ -46,18 +46,17 @@ class Game{
  * Branches code, depending on what key player presses
  * @param   {Object}    e - Keydown event object
  */
-    handleKeydown() {
-        document.addEventListener('keydown', function(e) {
+    handleKeydown(e) {
             if(this.ready = true){
-                if(e.key === ArrowLeft){
+                if(e.key === "ArrowLeft"){
                     this.activePlayer.activeToken.moveLeft();
-                } else if(e.key === ArrowRight){
+                } else if(e.key === "ArrowRight"){
                     this.activePlayer.activeToken.moveRight(this.board.columns);
-                } else if(e.key === ArrowDown){
-                    // drop the token
+                } else if(e.key === "ArrowDown"){
+                    this.playToken();
                 }
             }
-        })
+        
     }
 
     playToken() {

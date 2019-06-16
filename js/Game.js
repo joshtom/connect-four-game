@@ -84,8 +84,29 @@ class Game{
         const owner = target.token.owner;
         let win = false;
 
-        // Checking if the ball is aligned Vetically
-        
+        // Checking if the Disc is aligned Vetically
+        for( let x = 0; x < this.board.columns; x++ ) {
+            for( let y = 0; y < this.board.rows - 3; y++ ) {
+                if(this.board.spaces[x][y].owner === owner &&
+                    this.boaard.spaces[x][y+1].owner === owner &&
+                    this.board.spaces[x][y+2].owner === owner &&
+                    this.board.spaces[x][y+3].owner === owner){
+                        win = true;
+                }
+            }
+        }
+
+         // Checking if the Disc is aligned Vetically
+         for( let x = 0; x < this.board.columns; x++ ) {
+            for( let y = 0; y < this.board.rows - 3; y++ ) {
+                if(this.board.spaces[x][y].owner === owner &&
+                    this.boaard.spaces[x][y+1].owner === owner &&
+                    this.board.spaces[x][y+2].owner === owner &&
+                    this.board.spaces[x][y+3].owner === owner){
+                        win = true;
+                }
+            }
+        }
 
     }
 

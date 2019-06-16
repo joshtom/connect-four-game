@@ -96,17 +96,19 @@ class Game{
             }
         }
 
-         // Checking if the Disc is aligned Vetically
+         // Checking if the Disc is aligned Horizontallu
          for( let x = 0; x < this.board.columns; x++ ) {
             for( let y = 0; y < this.board.rows - 3; y++ ) {
                 if(this.board.spaces[x][y].owner === owner &&
-                    this.boaard.spaces[x][y+1].owner === owner &&
-                    this.board.spaces[x][y+2].owner === owner &&
-                    this.board.spaces[x][y+3].owner === owner){
+                    this.boaard.spaces[x+1][y].owner === owner &&
+                    this.board.spaces[x+2][y].owner === owner &&
+                    this.board.spaces[x+3][y].owner === owner){
                         win = true;
                 }
             }
         }
+
+        
 
     }
 

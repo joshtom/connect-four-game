@@ -6,12 +6,14 @@ Connect Four (also known as Captain's Mistress, Four Up, Plot Four, Find Four, F
 
 [Click to View Demo Here](https://name.com)
 
-##INSTALLATION 
+## INSTALLATION 
     It's as simple as your name so relax
 
     Clone or download the repository to your local Machine
     
     Open the folder (*ConnectFourGame*) Then Run the app by Dbclicking on the index.html file provided
+    
+    To get the most out of this Game, I recommend a chrome Browser
 >
     
 NOTE:: Please note that this is an Open Source Project so please feel free to fork and add your contributions. Thanks :)

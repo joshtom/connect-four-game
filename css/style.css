@@ -58,7 +58,7 @@ body {
     color: #fff;
     box-shadow: 2px 0px 2px 0px #293047;
     cursor: pointer;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Teko', sans-serif !important;
     padding: 10px;
     
 }
